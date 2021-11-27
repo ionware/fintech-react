@@ -18,10 +18,29 @@
   }
 
   td {
-    @apply px-4 py-4;
+    @apply px-2 py-3;
   }
 
   tbody:last-child {
     @apply border-b border-gray-600;
+  }
+
+  .chart {
+    height: 260px;
+  }
+  .chart-tooptip {
+    border: none;
+    outline: none;
+    @apply font-bold font-head text-sm text-primary-900;
+  }
+
+  @screen md {
+    td {
+      @apply px-3 py-4;
+    }
+
+    .chart {
+      height: 400px;
+    }
   }
 }

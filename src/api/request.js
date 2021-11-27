@@ -4,7 +4,7 @@ const request = axios.create({
   baseURL: process.env.API_URL,
 });
 
-// intercept response and return only data content.
+// intercept response.
 request.interceptors.response.use((response) => {
   return response.data;
 });
