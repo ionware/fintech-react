@@ -6,4 +6,22 @@
 
 @layer base {
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Manrope:wght@600;700;800&display=swap');
+  html,
+  body {
+    @apply text-black-600;
+  }
+}
+
+@layer components {
+  tr {
+    @apply border-t border-gray-600;
+  }
+
+  td {
+    @apply px-4 py-4;
+  }
+
+  tbody:last-child {
+    @apply border-b border-gray-600;
+  }
 }

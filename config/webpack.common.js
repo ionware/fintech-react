@@ -1,6 +1,7 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 const paths = require('./paths');
 
@@ -17,6 +18,7 @@ module.exports = {
 
   // Customize the webpack build process
   plugins: [
+    new Dotenv({ systemvars: true }),
     // Removes/cleans build folders and unused assets when rebuilding
     new CleanWebpackPlugin(),
 
@@ -63,6 +65,7 @@ module.exports = {
     extensions: ['.js', '.jsx', '.json'],
     alias: {
       '@components': `${paths.src}/components`,
+      '@api': `${paths.src}/api`,
       '@assets': paths.public,
     },
   },

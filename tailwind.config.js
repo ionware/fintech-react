@@ -13,11 +13,16 @@ module.exports = {
       },
       gray: {
         600: '#D8D8D8',
+        200: '#707070',
       },
       yellow: {
         900: '#D8BD5E',
       },
+      indigo: {
+        100: '#CBD0E1',
+      },
       white: '#ffffff',
+      green: '#4D8355',
     },
     extend: {
       fontFamily: {
